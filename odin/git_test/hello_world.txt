@@ -1,1 +1,0 @@
-First steps on Git and GitHub with The Odin Project
