@@ -1,0 +1,26 @@
+body {
+    background-color: rgb(144,238,144, .5)
+}
+
+.imgs {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    height: auto;
+}
+
+.titles,
+.ingredients,
+.prepare {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;  
+}
+
+.titles{}
+
+.ingredients{}
+
+.prepare{}

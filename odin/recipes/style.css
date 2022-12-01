@@ -1,5 +1,4 @@
 .background {
-    opacity: .6;
     position: absolute;
     left: 0;
     top: 0;
@@ -8,48 +7,54 @@
 }
 
 .text {
-    position: absolute;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
+    margin: 5%;
+}
+
+.recipes,
+.savory,
+.savory-list,
+.sweet,
+.sweet-list {    
+    border-radius: .3rem;
+    width: fit-content;
+    padding: .1rem .5rem;
+    padding-left: 3%;
+    padding-right: 3%;
 }
 
 .recipes {
     background-color: lightgreen;
-    border-radius: .5rem;
-    width: fit-content;
-    padding: .1rem .5rem;
 }
 
-.savory {
-    background-color: whitesmoke;
-    border-radius: .5rem;
-    width: fit-content;
-    padding: .1rem .5rem;
-}
-
+.savory,
 .savory-list {
-    background-color: whitesmoke;
-    border-radius: .5rem;
-    width: fit-content;
-    padding: .1rem .5rem;
-    margin: 2rem;
+    background-color: white;
 }
 
-.sweet {
-    background-color: pink;
-    border-radius: .5rem;
-    width: fit-content;
-    padding: .1rem .5rem;
-}
-
+.sweet,
 .sweet-list {
     background-color: pink;
-    border-radius: .5rem;
-    width: fit-content;
-    padding: .1rem .5rem;
-    margin: 2rem;
 }
 
-a {
+.savory-list,
+.sweet-list {
+    list-style-type: none;
+    text-align: center;
+    margin-top: 0;
+}
+
+a:link,
+a:visited,
+a:active {
     color: black;
-    
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
